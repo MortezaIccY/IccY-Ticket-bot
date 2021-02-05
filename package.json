@@ -1,0 +1,19 @@
+{
+  "name": "iccy-ticket-bot",
+  "version": "1.0.0",
+  "description": "Here is the code for the [Supporter](https://discord.com/oauth2/authorize?client_id=715856134371803168&scope=bot&permissions=2146958847) bot now open-source.",
+  "main": "index.js",
+  "dependencies": {
+    "dateformat": "^4.5.1",
+    "discord.js": "^12.5.1",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "quick.db": "^7.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
