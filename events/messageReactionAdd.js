@@ -38,7 +38,7 @@ module.exports = async (bot, reaction, user) => {
         let role = message.guild.roles.cache.find(r => r.name === "Ticket Support");
         if(!role) {
           message.guild.roles.create({data:{name: "Ticket Support", permissions: 0}, reason: 'Baraye Didan Ticket Bayad Staff Role Ticket Supporter Dashte Bashand'});
-          message.channel.send(`S'il vous plaît, veuillez réagir une nouvelle fois au message de création de ticket.`).then(m => m.delete({timeout: 5000}).catch(e => {}));
+          message.channel.send(`Lotfan Dobare Roye Emoji Click Konid`).then(m => m.delete({timeout: 5000}).catch(e => {}));
           reaction.users.remove(user.id);
           return
         }
@@ -62,7 +62,7 @@ module.exports = async (bot, reaction, user) => {
           },
         ],
         parent: categoria.id,
-        reason: `Cet utilisateur a besoin d'aide.`,
+        reason: `In User Ticket Baz Kard`,
         topic: `**ID:** ${user.id} -- **Tag:** ${user.tag} | ?close`
       }).then(channel => {
 
