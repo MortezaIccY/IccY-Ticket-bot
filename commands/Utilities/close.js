@@ -26,7 +26,7 @@ exports.run = async (bot, message, args, functions) => {
     } else {
     
       let support = message.guild.roles.cache.find(r => r.name === "Ticket Support");
-      if(!support) return functions.errorEmbed(message, message.channel, "Le rôle `Ticket Support` n'existe pas, veuillez le créer.");
+      if(!support) return functions.errorEmbed(message, message.channel, "Error");
       if(message.deletable) message.delete();
     
       if(args[0] === "force"){
@@ -60,7 +60,7 @@ exports.run = async (bot, message, args, functions) => {
       .setFooter("Coded By IccY#2265", `https://cdn.discordapp.com/attachments/626444990620499978/807146734069350400/iccy.gif`)
       .addField(`Etelat`, `**Utilisateur :** \`${message.author.tag}\`\n**ID :** \`${message.author.id}\`\n**Ticket :** \`${message.channel.name}\`\n**Dar Tarikhe :** \`${dateFormat(new Date(), "dd/mm/yyyy - HH:MM:ss")}\``);
     
-        if(!message.guild.member(message.author).roles.cache.has(support.id)) return functions.errorEmbed(message, message.channel, "Désolé, vous n'avez pas le rôle `Ticket Support`.");
+        if(!message.guild.member(message.author).roles.cache.has(support.id)) return functions.errorEmbed(message, message.channel, "Shoma Role `Ticket Support` Ra Nadarid.");
         let embed2 = new Discord.MessageEmbed()
         .setColor(color.green)
         .setTitle(`🎟️ | Ticket Kamel Shod`)
