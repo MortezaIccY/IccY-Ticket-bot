@@ -16,7 +16,7 @@ let embed = new Discord.MessageEmbed()
    .addField("```$setlogs```", "Az In Command Baraye Set Kardan Log Dar Channel Khod Estefade Konid ```?setlogs #channel```", false)
    .addField("```?ticket```", "Az Command Baraye Sakhtane Ticket Estefade Konid ```?ticket```", false)
    .addField("```?close```", "Az In Command Baraye Delete Kardan Ya Bastane Har Ticket Anjam Bedid ```?close```", false)
-   .setFooter("Coded By IccY#2265", `https://cdn.discordapp.com/attachments/626444990620499978/807146734069350400/iccy.gif`)
+   .setFooter("Coded By 𝐀𝖇𝓷𝟈𝓻", `https://cdn.discordapp.com/attachments/626444990620499978/807146734069350400/iccy.gif`)
    return message.channel.send(embed);
 
 }
